@@ -41,12 +41,12 @@ function makeLessons(prefix, specs) {
 export const JUS_COURSES = [
   {
     id: "const-2f",
-    title: "Direito Constitucional — 2ª Fase do 46º Exame de Ordem",
-    full: "Curso Regular de Direito Constitucional para 2ª Fase do 46º Exame de Ordem",
-    short: "Constitucional 2ª Fase",
+    title: "Direito Administrativo — 2ª Fase do 46º Exame de Ordem",
+    full: "Curso Regular de Direito Administrativo para 2ª Fase do 46º Exame de Ordem",
+    short: "Administrativo 2ª Fase",
     tag: "OAB 2ª FASE",
     category: "oab",
-    instructor: "Prof. Renata Vasconcelos",
+    instructor: "Prof. Cecília Navarro",
     cover: PHOTOS.ladyJustice,
     hero: PHOTOS.spiralLibrary,
     hours: "38h",
@@ -56,8 +56,13 @@ export const JUS_COURSES = [
     year: "2026",
     featured: true,
     synopsis:
-      "Treinamento completo de peças e questões discursivas de Direito Constitucional para a 2ª fase da OAB. Da estrutura da peça ao espelho de correção, com simulados comentados e banca examinadora ao vivo.",
-    skills: ["Peça processual", "Questões discursivas", "Espelho de correção", "Controle de constitucionalidade"],
+      "Treinamento completo de peças e questões discursivas de Direito Administrativo para a 2ª fase da OAB. Da estrutura da peça ao espelho de correção, com simulados comentados e banca examinadora ao vivo.",
+    skills: [
+      "Peça processual",
+      "Questões discursivas",
+      "Espelho de correção",
+      "Licitações e Contratos Administrativos",
+    ],
     progress: 0.42,
     modules: [
       {
@@ -65,10 +70,32 @@ export const JUS_COURSES = [
         title: "Módulo 1 — Fundamentos da 2ª Fase",
         subtitle: "Como a banca pensa e corrige",
         lessons: makeLessons("const-m1", [
-          { t: "video", title: "Boas-vindas e visão geral do curso", dur: "12min", p: 1, img: PHOTOS.bustsLibrary },
-          { t: "video", title: "Estrutura da prova e gestão de tempo", dur: "28min", p: 1, img: PHOTOS.booksStack },
-          { t: "pdf", title: "Edital comentado — pontos de Constitucional", pages: 24 },
-          { t: "video", title: "Anatomia da peça: do cabeçalho ao pedido", dur: "41min", p: 0.6, img: PHOTOS.signing },
+          {
+            t: "video",
+            title: "Boas-vindas e visão geral do curso",
+            dur: "12min",
+            p: 1,
+            img: PHOTOS.bustsLibrary,
+          },
+          {
+            t: "video",
+            title: "Estrutura da prova e gestão de tempo",
+            dur: "28min",
+            p: 1,
+            img: PHOTOS.booksStack,
+          },
+          {
+            t: "pdf",
+            title: "Edital comentado — pontos de Administrativo",
+            pages: 24,
+          },
+          {
+            t: "video",
+            title: "Anatomia da peça: do cabeçalho ao pedido",
+            dur: "41min",
+            p: 0.6,
+            img: PHOTOS.signing,
+          },
           { t: "pdf", title: "Checklist de correção da peça", pages: 6 },
         ]),
       },
@@ -77,12 +104,40 @@ export const JUS_COURSES = [
         title: "Módulo 2 — Remédios Constitucionais",
         subtitle: "MS, HC, HD, MI e ações coletivas",
         lessons: makeLessons("const-m2", [
-          { t: "video", title: "Mandado de Segurança individual e coletivo", dur: "52min", p: 0.3, img: PHOTOS.gavel },
-          { t: "video", title: "Habeas Corpus e Habeas Data na prática", dur: "47min", p: 0, img: PHOTOS.gavelClose },
-          { t: "pdf", title: "Modelos de peça — Remédios Constitucionais", pages: 18 },
-          { t: "video", title: "Mandado de Injunção: cabimento e efeitos", dur: "33min", p: 0, img: PHOTOS.library },
+          {
+            t: "video",
+            title: "Mandado de Segurança individual e coletivo",
+            dur: "52min",
+            p: 0.3,
+            img: PHOTOS.gavel,
+          },
+          {
+            t: "video",
+            title: "Habeas Corpus e Habeas Data na prática",
+            dur: "47min",
+            p: 0,
+            img: PHOTOS.gavelClose,
+          },
+          {
+            t: "pdf",
+            title: "Modelos de peça — Remédios Constitucionais",
+            pages: 18,
+          },
+          {
+            t: "video",
+            title: "Mandado de Injunção: cabimento e efeitos",
+            dur: "33min",
+            p: 0,
+            img: PHOTOS.library,
+          },
           { t: "pdf", title: "Tabela comparativa dos remédios", pages: 4 },
-          { t: "video", title: "Simulado comentado — peça nota 10", dur: "1h 04min", p: 0, img: PHOTOS.bookshelfLadder },
+          {
+            t: "video",
+            title: "Simulado comentado — peça nota 10",
+            dur: "1h 04min",
+            p: 0,
+            img: PHOTOS.bookshelfLadder,
+          },
         ]),
       },
       {
@@ -90,10 +145,28 @@ export const JUS_COURSES = [
         title: "Módulo 3 — Controle de Constitucionalidade",
         subtitle: "ADI, ADC, ADPF e modulação de efeitos",
         lessons: makeLessons("const-m3", [
-          { t: "video", title: "Controle difuso x concentrado", dur: "39min", p: 0, img: PHOTOS.ladyJustice },
-          { t: "video", title: "ADI e ADC: legitimados e procedimento", dur: "44min", p: 0, img: PHOTOS.documents },
+          {
+            t: "video",
+            title: "Controle difuso x concentrado",
+            dur: "39min",
+            p: 0,
+            img: PHOTOS.ladyJustice,
+          },
+          {
+            t: "video",
+            title: "ADI e ADC: legitimados e procedimento",
+            dur: "44min",
+            p: 0,
+            img: PHOTOS.documents,
+          },
           { t: "pdf", title: "Jurisprudência selecionada do STF", pages: 32 },
-          { t: "video", title: "ADPF e o princípio da subsidiariedade", dur: "36min", p: 0, img: PHOTOS.gavel },
+          {
+            t: "video",
+            title: "ADPF e o princípio da subsidiariedade",
+            dur: "36min",
+            p: 0,
+            img: PHOTOS.gavel,
+          },
         ]),
       },
       {
@@ -101,9 +174,21 @@ export const JUS_COURSES = [
         title: "Módulo 4 — Reta Final e Simulados",
         subtitle: "Banca ao vivo e correção individual",
         lessons: makeLessons("const-m4", [
-          { t: "video", title: "Simulado 1 — peça + 4 questões", dur: "2h 10min", p: 0, img: PHOTOS.lectureHall },
+          {
+            t: "video",
+            title: "Simulado 1 — peça + 4 questões",
+            dur: "2h 10min",
+            p: 0,
+            img: PHOTOS.lectureHall,
+          },
           { t: "pdf", title: "Espelho oficial do Simulado 1", pages: 12 },
-          { t: "video", title: "Correção comentada da banca", dur: "1h 22min", p: 0, img: PHOTOS.bustsLibrary },
+          {
+            t: "video",
+            title: "Correção comentada da banca",
+            dur: "1h 22min",
+            p: 0,
+            img: PHOTOS.bustsLibrary,
+          },
           { t: "pdf", title: "Mapa mental — revisão de véspera", pages: 8 },
         ]),
       },
@@ -140,7 +225,8 @@ export const JUS_COURSES = [
     rating: "4,9",
     students: "10.210",
     year: "2026",
-    synopsis: "Treinamento de peças cíveis e questões discursivas com simulados comentados.",
+    synopsis:
+      "Treinamento de peças cíveis e questões discursivas com simulados comentados.",
     progress: 0.0,
     modules: [],
   },
@@ -157,7 +243,8 @@ export const JUS_COURSES = [
     rating: "4,7",
     students: "7.640",
     year: "2026",
-    synopsis: "Peças trabalhistas, reclamação e recursos com base no espelho de correção.",
+    synopsis:
+      "Peças trabalhistas, reclamação e recursos com base no espelho de correção.",
     progress: 0.0,
     modules: [],
   },
@@ -179,7 +266,12 @@ export const JUS_COURSES = [
     featured: true,
     synopsis:
       "Preparação pré-edital completa para Investigador da PC-BA: conhecimentos gerais, específicos e legislação institucional, com cronograma guiado de estudos.",
-    skills: ["Direito Penal", "Legislação Especial", "Raciocínio Lógico", "Investigação Criminal"],
+    skills: [
+      "Direito Penal",
+      "Legislação Especial",
+      "Raciocínio Lógico",
+      "Investigação Criminal",
+    ],
     progress: 0.18,
     modules: [
       {
@@ -187,9 +279,25 @@ export const JUS_COURSES = [
         title: "Módulo 1 — Direito Penal para a Investigação",
         subtitle: "Teoria do crime aplicada",
         lessons: makeLessons("pcba-m1", [
-          { t: "video", title: "Teoria geral do crime", dur: "58min", p: 0.8, img: PHOTOS.policeCar },
-          { t: "pdf", title: "Resumo esquematizado — Teoria do crime", pages: 22 },
-          { t: "video", title: "Crimes contra a pessoa", dur: "1h 12min", p: 0, img: PHOTOS.documents },
+          {
+            t: "video",
+            title: "Teoria geral do crime",
+            dur: "58min",
+            p: 0.8,
+            img: PHOTOS.policeCar,
+          },
+          {
+            t: "pdf",
+            title: "Resumo esquematizado — Teoria do crime",
+            pages: 22,
+          },
+          {
+            t: "video",
+            title: "Crimes contra a pessoa",
+            dur: "1h 12min",
+            p: 0,
+            img: PHOTOS.documents,
+          },
           { t: "pdf", title: "Lista de questões CESPE comentadas", pages: 40 },
         ]),
       },
@@ -198,9 +306,25 @@ export const JUS_COURSES = [
         title: "Módulo 2 — Legislação Institucional",
         subtitle: "Estatuto e regimento da PC-BA",
         lessons: makeLessons("pcba-m2", [
-          { t: "video", title: "Estrutura da Polícia Civil da Bahia", dur: "34min", p: 0, img: PHOTOS.handshake },
-          { t: "pdf", title: "Lei Orgânica da PC-BA — íntegra comentada", pages: 56 },
-          { t: "video", title: "Atribuições do Investigador", dur: "26min", p: 0, img: PHOTOS.signing },
+          {
+            t: "video",
+            title: "Estrutura da Polícia Civil da Bahia",
+            dur: "34min",
+            p: 0,
+            img: PHOTOS.handshake,
+          },
+          {
+            t: "pdf",
+            title: "Lei Orgânica da PC-BA — íntegra comentada",
+            pages: 56,
+          },
+          {
+            t: "video",
+            title: "Atribuições do Investigador",
+            dur: "26min",
+            p: 0,
+            img: PHOTOS.signing,
+          },
         ]),
       },
     ],
@@ -242,7 +366,12 @@ export const JUS_COURSES = [
     featured: true,
     synopsis:
       "Preparação para Técnico Judiciário do Tribunal de Justiça do Ceará com foco no edital, organização judiciária e direito processual.",
-    skills: ["Organização Judiciária", "Processo Civil", "Português", "Noções de Direito"],
+    skills: [
+      "Organização Judiciária",
+      "Processo Civil",
+      "Português",
+      "Noções de Direito",
+    ],
     progress: 0.07,
     modules: [
       {
@@ -250,9 +379,25 @@ export const JUS_COURSES = [
         title: "Módulo 1 — Organização Judiciária do Ceará",
         subtitle: "Estrutura e competências do TJCE",
         lessons: makeLessons("tjce-m1", [
-          { t: "video", title: "Estrutura do Poder Judiciário cearense", dur: "44min", p: 0.4, img: PHOTOS.gavel },
-          { t: "pdf", title: "Código de Organização Judiciária — esquema", pages: 28 },
-          { t: "video", title: "Competências do Técnico Judiciário", dur: "31min", p: 0, img: PHOTOS.documents },
+          {
+            t: "video",
+            title: "Estrutura do Poder Judiciário cearense",
+            dur: "44min",
+            p: 0.4,
+            img: PHOTOS.gavel,
+          },
+          {
+            t: "pdf",
+            title: "Código de Organização Judiciária — esquema",
+            pages: 28,
+          },
+          {
+            t: "video",
+            title: "Competências do Técnico Judiciário",
+            dur: "31min",
+            p: 0,
+            img: PHOTOS.documents,
+          },
         ]),
       },
     ],
@@ -274,7 +419,12 @@ export const JUS_COURSES = [
     year: "2026",
     synopsis:
       "Domine o Processo Judicial Eletrônico na prática: do cadastro do advogado ao protocolo de petições com segurança, passo a passo na tela do sistema.",
-    skills: ["Cadastro PJe", "Peticionamento", "Assinatura digital", "Acompanhamento processual"],
+    skills: [
+      "Cadastro PJe",
+      "Peticionamento",
+      "Assinatura digital",
+      "Acompanhamento processual",
+    ],
     progress: 0.65,
     modules: [
       {
@@ -282,10 +432,28 @@ export const JUS_COURSES = [
         title: "Módulo 1 — Primeiros passos no PJe",
         subtitle: "Cadastro, certificado e acesso",
         lessons: makeLessons("pje-m1", [
-          { t: "video", title: "O que é o PJe e como ele funciona", dur: "18min", p: 1, img: PHOTOS.monitorSetup },
-          { t: "video", title: "Configurando o certificado digital", dur: "22min", p: 1, img: PHOTOS.laptopWork },
+          {
+            t: "video",
+            title: "O que é o PJe e como ele funciona",
+            dur: "18min",
+            p: 1,
+            img: PHOTOS.monitorSetup,
+          },
+          {
+            t: "video",
+            title: "Configurando o certificado digital",
+            dur: "22min",
+            p: 1,
+            img: PHOTOS.laptopWork,
+          },
           { t: "pdf", title: "Checklist de pré-requisitos técnicos", pages: 5 },
-          { t: "video", title: "Primeiro acesso e painel do advogado", dur: "27min", p: 0.5, img: PHOTOS.writing },
+          {
+            t: "video",
+            title: "Primeiro acesso e painel do advogado",
+            dur: "27min",
+            p: 0.5,
+            img: PHOTOS.writing,
+          },
         ]),
       },
       {
@@ -293,9 +461,25 @@ export const JUS_COURSES = [
         title: "Módulo 2 — Peticionamento com Segurança",
         subtitle: "Do rascunho ao protocolo",
         lessons: makeLessons("pje-m2", [
-          { t: "video", title: "Montando a petição inicial no sistema", dur: "35min", p: 0, img: PHOTOS.monitorSetup },
-          { t: "pdf", title: "Erros comuns no protocolo (e como evitar)", pages: 9 },
-          { t: "video", title: "Protocolando com segurança e conferindo recibo", dur: "29min", p: 0, img: PHOTOS.laptopWork },
+          {
+            t: "video",
+            title: "Montando a petição inicial no sistema",
+            dur: "35min",
+            p: 0,
+            img: PHOTOS.monitorSetup,
+          },
+          {
+            t: "pdf",
+            title: "Erros comuns no protocolo (e como evitar)",
+            pages: 9,
+          },
+          {
+            t: "video",
+            title: "Protocolando com segurança e conferindo recibo",
+            dur: "29min",
+            p: 0,
+            img: PHOTOS.laptopWork,
+          },
         ]),
       },
     ],
@@ -337,7 +521,12 @@ export const JUS_COURSES = [
     featured: true,
     synopsis:
       "LGPD, contratos eletrônicos, crimes cibernéticos e proteção de dados: a especialização para advogar na fronteira da tecnologia.",
-    skills: ["LGPD", "Crimes Cibernéticos", "Contratos Eletrônicos", "Proteção de Dados"],
+    skills: [
+      "LGPD",
+      "Crimes Cibernéticos",
+      "Contratos Eletrônicos",
+      "Proteção de Dados",
+    ],
     progress: 0.0,
     modules: [],
   },
@@ -363,11 +552,31 @@ export const JUS_COURSES = [
 ];
 
 export const JUS_ROWS = [
-  { id: "oab", title: "OAB 2ª Fase", ids: ["const-2f", "penal-2f", "civil-2f", "trab-2f"] },
-  { id: "policiais", title: "Carreiras Policiais", ids: ["pc-ba", "pmpe", "pos-seg"] },
-  { id: "tribunais", title: "Concursos de Tribunais", ids: ["tjce", "const-2f", "penal-2f"] },
-  { id: "pos", title: "Pós-Graduação Jus21", ids: ["pos-digital", "pos-const", "pos-seg"] },
-  { id: "pratica", title: "Prática Jurídica", ids: ["pje", "const-2f", "tjce"] },
+  {
+    id: "oab",
+    title: "OAB 2ª Fase",
+    ids: ["const-2f", "penal-2f", "civil-2f", "trab-2f"],
+  },
+  {
+    id: "policiais",
+    title: "Carreiras Policiais",
+    ids: ["pc-ba", "pmpe", "pos-seg"],
+  },
+  {
+    id: "tribunais",
+    title: "Concursos de Tribunais",
+    ids: ["tjce", "const-2f", "penal-2f"],
+  },
+  {
+    id: "pos",
+    title: "Pós-Graduação Jus21",
+    ids: ["pos-digital", "pos-const", "pos-seg"],
+  },
+  {
+    id: "pratica",
+    title: "Prática Jurídica",
+    ids: ["pje", "const-2f", "tjce"],
+  },
 ];
 
 export const JUS_USER = {
@@ -376,7 +585,8 @@ export const JUS_USER = {
   email: "mariana.costa@email.com",
   plan: "Jus21 Premium Anual",
   since: "Aluna desde mar/2024",
-  avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&q=80",
+  avatar:
+    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&q=80",
 };
 
 export function findCourse(id) {
